@@ -9,11 +9,11 @@ int main()
 {
     ContactBook cb;
 
-    std::auto_ptr<Contact> c1(new PhoneContact("JieYuan", "13817616910"));
+    std::auto_ptr<Contact> c1(new PhoneContact("JieYuan", "11111222333"));
     size_t nAndroidPhoneContact = cb.add(c1);
-    std::auto_ptr<Contact> c2(new WeiboContact("JieYuan", "jieyuan.shen@163.com"));
+    std::auto_ptr<Contact> c2(new WeiboContact("JieYuan", "jieyuan@example.com"));
     size_t nWeiboContact = cb.add(c2);
-    std::auto_ptr<Contact> c3(new PhoneContact("Brenda", "13816481852"));
+    std::auto_ptr<Contact> c3(new PhoneContact("Brenda", "11111222444"));
     size_t nIPhoneContact = cb.add(c3);
 
     cb.get(nAndroidPhoneContact)->dial();
